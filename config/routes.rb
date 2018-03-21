@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'cart/checkout'
 
+  post 'order_complete' => 'cart#order_complete'
+
   get 'storefront/all_items'
 
   get 'storefront/items_by_category'
